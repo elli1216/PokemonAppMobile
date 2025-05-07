@@ -19,8 +19,11 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/purple"
             android:gravity="center"
+            android:padding="5dp"
             android:text="Pokemon"
+            android:textColor="@color/white"
             android:textSize="34sp"
             android:textStyle="bold" />
 
@@ -69,63 +72,81 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="PokeDex ID" />
+                android:fontFamily="sans-serif-black"
+                android:text="PokeDex ID"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/textViewName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Name" />
+                android:fontFamily="sans-serif-black"
+                android:text="Name"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/textViewType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Type" />
+                android:fontFamily="sans-serif-black"
+                android:text="Type"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/textViewHP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="HP" />
+                android:fontFamily="sans-serif-black"
+                android:text="HP"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/textViewAttack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Attack" />
+                android:fontFamily="sans-serif-black"
+                android:text="Attack"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/textViewDefense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Defense" />
+                android:fontFamily="sans-serif-black"
+                android:text="Defense"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/textViewSpec"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Special Attack" />
+                android:fontFamily="sans-serif-black"
+                android:text="Special Attack"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/textViewSpecD"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Special Defense" />
+                android:fontFamily="sans-serif-black"
+                android:text="Special Defense"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/textViewSpeed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Speed" />
+                android:fontFamily="sans-serif-black"
+                android:text="Speed"
+                android:textSize="24sp" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
