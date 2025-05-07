@@ -5,24 +5,27 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/indigo"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
+        android:backgroundTint="@color/indigo"
         android:orientation="vertical"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="1dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/purple"
+            android:layout_margin="0dp"
+            android:background="@color/black"
             android:gravity="center"
             android:padding="5dp"
-            android:text="Pokemon"
+            android:text="POKEMON"
             android:textColor="@color/white"
             android:textSize="34sp"
             android:textStyle="bold" />
@@ -31,15 +34,19 @@
             android:id="@+id/editTextPokemon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
             android:ems="10"
             android:hint="Enter a Pokemon"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray" />
 
         <Button
             android:id="@+id/buttonSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
             android:layout_marginVertical="2dp"
             android:backgroundTint="@color/red"
             android:text="SEARCH"
@@ -49,23 +56,34 @@
             android:id="@+id/buttonClear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
             android:layout_marginVertical="2dp"
             android:backgroundTint="@color/black"
             android:text="CLEAR"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/imageViewPic"
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:layout_marginVertical="5dp"
-            tools:srcCompat="@android:drawable/screen_background_light" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_margin="8dp"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/orange"
+            android:foregroundTint="@color/black"
+            android:orientation="vertical"
+            android:outlineSpotShadowColor="@color/black"
+            android:padding="8dp">
+
+
+            <ImageView
+                android:id="@+id/imageViewPic"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/circular_image"
+                android:padding="3dp"
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:id="@+id/textViewPID"
@@ -73,7 +91,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="PokeDex ID"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <TextView
@@ -82,7 +102,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="Name"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <TextView
@@ -91,7 +113,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="Type"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <TextView
@@ -100,7 +124,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="HP"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <TextView
@@ -109,7 +135,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="Attack"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <TextView
@@ -118,7 +146,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="Defense"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <TextView
@@ -127,7 +157,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="Special Attack"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <TextView
@@ -136,7 +168,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="Special Defense"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
 
             <TextView
@@ -145,7 +179,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="Speed"
+                android:textColor="@color/black"
                 android:textSize="24sp" />
         </LinearLayout>
     </LinearLayout>
