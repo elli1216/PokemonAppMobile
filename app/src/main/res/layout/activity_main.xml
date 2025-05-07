@@ -37,22 +37,27 @@
             android:id="@+id/buttonSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
             android:backgroundTint="@color/red"
-            android:text="SEARCH" />
+            android:text="SEARCH"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/buttonClear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
             android:backgroundTint="@color/black"
             android:text="CLEAR"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <ImageView
             android:id="@+id/imageViewPic"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_height="160dp"
+            android:layout_marginVertical="5dp"
+            tools:srcCompat="@android:drawable/screen_background_light" />
 
         <LinearLayout
             android:layout_width="match_parent"
