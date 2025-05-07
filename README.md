@@ -2,7 +2,7 @@
 # Pokemon App
 # https://pokeapi.co/docs
 #
-#Screenshots
+# Screenshots
 #
 ![Screenshot 2025-05-07 221209](https://github.com/user-attachments/assets/7001f544-e730-47d8-802c-14e9db18ec69)
 
