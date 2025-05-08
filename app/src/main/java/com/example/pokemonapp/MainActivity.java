@@ -101,15 +101,12 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
-                            // Parse Pokemon ID
                             int id = response.getInt("id");
                             PokemonIdTextView.setText("PokeDex ID: " + id);
 
-                            // Parse Pokemon name
                             String name = response.getString("name");
                             PokemonNameTextView.setText("Name: " + name.substring(0, 1).toUpperCase() + name.substring(1));
 
-                            // Parse Pokemon types
                             JSONArray types = response.getJSONArray("types");
                             StringBuilder typeBuilder = new StringBuilder("Type: ");
                             for (int i = 0; i < types.length(); i++) {
@@ -122,7 +119,6 @@ public class MainActivity extends AppCompatActivity {
                             }
                             PokemonTypeTextView.setText(typeBuilder.toString());
 
-                            // Parse Pokemon stats
                             JSONArray stats = response.getJSONArray("stats");
                             for (int i = 0; i < stats.length(); i++) {
                                 JSONObject statObj = stats.getJSONObject(i);
@@ -176,6 +172,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Bitmap response) {
                         pokemonImageView.setImageBitmap(response);
+                        pokemonImageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
                     }
                 }, 0, 0, ImageView.ScaleType.FIT_CENTER, null,
                 new Response.ErrorListener() {
@@ -199,6 +196,7 @@ public class MainActivity extends AppCompatActivity {
         PokemonSpecialAttackTextView.setText("Special Attack");
         PokemonSpecialDefenseTextView.setText("Special Defense");
         PokemonSpeedTextView.setText("Speed");
-        pokemonImageView.setImageResource(android.R.drawable.ic_menu_gallery);
+        pokemonImageView.setScaleType(ImageView.ScaleType.CENTER);
+        pokemonImageView.setImageResource(R.mipmap.ic_pokeball_foreground);
     }
 }
