@@ -5,13 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/indigo"
+    android:background="@color/peach"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
-        android:backgroundTint="@color/indigo"
+        android:backgroundTint="@color/peach"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
@@ -39,7 +39,7 @@
             android:hint="Enter a Pokemon"
             android:inputType="text"
             android:minHeight="48dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textColorHint="@color/gray" />
 
         <Button
